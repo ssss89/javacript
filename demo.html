@@ -1,32 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-<body>
-	<h1>javascript data type</h1>
-	<ul><li>
-		number
-	</li><li>
-		string
-	</li> <li>
-		boolean
-	</li>
-<li>
-		null
-	</li>
-<li>
-		array
-	</li>
-<li>
-		object
-	</li></ul>
-	<script>
-		var x  = {first:'shiv',last:"soni"}
-		var x  = ['shiv',"soni"]
-		document.write(x[1])
-	</script>
-</body>
+<html>
+ <head>
+ <title>The jQuery toggle</title>
+ <script type="text/javascript"
+src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+ <script type="text/javascript" language="javascript">
+ $(document).ready(function() {
+ $(".clickme").click(function(event){
+ $(".target").toggle('slow', function(){
+ $(".log").text('this is demo massage');
+ });
+jQuery
+267
+ });
+ });
+ </script>
+ <style>
+ .clickme{ margin:10px;padding:12px; border:2px solid #666;
+width:100px; height:50px;}
+ </style>
+ </head>
+ <body>
+ <div class="content">
+ <div class="clickme">Click Me</div>
+ <div class="target">
+ <img src="s.png" alt="jQuery" / width="200px">
+ </div>
+ <div class="log"></div>
+ </div>
+ </body>
 </html>
